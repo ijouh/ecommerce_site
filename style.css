@@ -1,0 +1,409 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family:  'Jost' ,sans-serif;
+    list-style: none;
+    text-decoration: none;
+
+}
+
+header{
+    position: fixed;
+    width: 100%;
+    top:0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 10px;
+}
+
+.logo img {
+    max-width: 120px;
+    height: auto;
+    margin-left: 100px;
+}
+
+.navemenu{
+    
+    display: flex;
+}
+
+.navemenu a{
+    color: #2c2c2c;
+    font-size: 16px;
+    text-transform: capitalize;
+    padding: 10px 20px;
+    font-weight: 400px;
+    transition: all .42 ease;
+}
+
+.navemenu a:hover{
+    color: #EE1C47;
+}
+
+.nav-icon{
+    display: flex;
+    align-items: center;
+}
+
+.nav-icon i{ 
+    margin-right: 20px;
+    color: #2c2c2c;
+    font-size: 25px;
+    font-weight: 400px;
+    transition: all .42 ease;
+}
+
+.nav-icon i:hover{ 
+    transform: scale(1.1);
+    color: #EE1C47;
+}
+
+#menu-icon{
+    font-size: 35px;
+    color: #2c2c2c;
+    z-index: 10001;
+    cursor: pointer;
+}
+
+/* end header*/
+/* sart home*/
+section{
+    padding: 5% 10%;
+}
+
+.main-home{
+    width: 100%;
+    height: 100vh;
+    background-image: url(images/fashion33.png);
+    background-position: center;
+    background-size: cover;
+    display: grid;
+    grid-auto-columns: repeat(1, 1fr);
+    align-items: center;
+}
+
+.main-text h5{
+    color: #EE1C47;
+    font-size: 16px;
+    text-transform: capitalize;
+    font-weight: 500;
+}
+
+.main-text h1 {
+    color: #000;
+    font-size: 65px;
+    text-transform: capitalize;
+    line-height: 1.1;
+    font-weight: 600;
+    margin: 6px 0 10px;
+}
+.main-text p{
+    color: #333c56;
+    font-size: 20px;
+    font-style: italic;
+    margin-bottom: 20px;
+}
+
+.main-btn{
+    display: inline-block;
+    color: #111;
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: capitalize;
+    border: 1px solid #111;
+    padding: 12px 25px;
+    transition: all .42 ease;
+}
+
+.main-btn:hover{
+    background-color: #000;
+    color: #fff;
+   
+}
+
+.main-btn i {
+    vertical-align: middle;
+}
+
+.down-arrow{
+    position: absolute;
+    top: 85%;
+    right: 10%;
+}
+
+.down i{
+    font-size: 30px;
+    color: #2c2c2c;
+    border: 2px solid #2c2c2c;
+    padding: 12px 12px;
+    border-radius: 50%;
+}
+
+.down i:hover{
+    background-color: #2c2c2c;
+    color: #fff;
+    transition: all .42s ease;
+}
+
+header.sticky{
+    background-color: #fff;
+    padding: 20px 10px;
+    box-shadow: 0 0 10px rgba(0 0 0 / 10%);
+}
+
+/* trending-section-css */
+.center-text h2{
+    color:#111;
+    font-size: 28px;
+    text-transform: capitalize;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.center-text span{
+    color: #EE1C47;
+} 
+
+.products{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, auto));
+    gap: 2rem;
+}
+
+.row{
+    position: relative;
+    transition: all .42s;
+}
+
+.row img{
+    width: 100%;
+    height: auto;
+    transition: all .40s;
+    max-height: 250px;
+    min-height: 300px;
+}
+
+.row img:hover{
+    transform: scale(0.9);
+}
+
+.product-text
+{
+    position: absolute;
+    top: 14px;
+    left: 14px;
+    color: #fff;
+    font-size: 12px;
+    font-weight: 500;
+    text-transform: uppercase;
+    background-color: #27b737;
+    padding: 3px 10px;
+    border-radius: 2px;
+}
+
+.heart-icon i{
+    position: absolute;
+    right :0;
+    font-size: 20px;
+    
+} 
+
+.heart-icon i:hover{
+    color: #EE1C47;
+}
+
+.ratting i {
+    color: #ff8c00;
+    font-size: 18px;
+}
+
+.parice h4{
+    color: #111;
+    text-transform: capitalize;
+    font-size: 16px;
+    font-weight: 400;
+     
+}
+
+.parice p{
+    color: #000;
+    font-size: 14px;
+    font-weight: 600;
+
+}
+
+/* client reviews  */
+.client-reviews{
+    background-color: #F3F4F6;
+}
+
+.reviews{
+    text-align: center;
+}
+
+.reviews h3{
+    color: #111;
+    font-size: 25px;
+    text-transform: capitalize;
+    text-align: center;
+    font-weight: 700;
+}
+
+.reviews img{
+    width: 100px;
+    height: auto;
+    border-radius: 50px;
+    margin: 10px 0;
+}
+
+.reviews img{
+    color: #707070;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 25px;
+    margin-bottom: 10px;
+}
+
+.reviews h2{
+    font-size: 22px;
+    color: #000;
+    font-weight: 400;
+    text-transform: capitalize;
+    margin-bottom: 2px;
+}
+
+/*  update-section-css */
+.up-center-text h2{
+    color: #111;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: capitalize;
+    margin-bottom: 30px;
+}
+
+.cart img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    min-height: 250px;
+}
+
+.update-cart{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px,auto));
+    gap: 1rem;
+}
+
+.cart h5{
+    color: #536872;
+    font-size: 14px;
+    text-transform: capitalize;
+    font-weight: 500;
+}
+
+.cart h4{
+    color: #111;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.cart p{
+    color: #707070;
+    font-size: 15px;
+    max-width: 250px;
+    line-height: 25px;
+    margin-bottom: 12px;
+}
+
+.cart h6{
+    color: #151515;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+/* contact-section */
+.contact{
+    background-color: #F3F4F6;
+}
+.contact-info{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(160px ,auto));
+    gap: 2rem;
+}
+
+.first-info{
+    width: 200px;
+    height: auto;
+}
+
+.contact-info h4{
+    color: #212529;
+    font-size: 14px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.contact-info p{
+    color: #565656;
+    font-size: 13px;
+    font-weight: 500;
+    text-transform: uppercase;
+    line-height: 1.5;
+    margin-bottom: 10px;
+    cursor: pointer;
+    transition: all .42;
+}
+
+.contact-info p:hover{
+    color: #EE1C47;
+}
+
+.social-icon i{
+    color: #565656;
+    margin-right: 10px;
+    font-size: 20px;
+    transition: all .42;
+}
+
+.social-icon i:hover{
+    transform: scale(1.3);
+}
+
+.end-text{
+    background-color: #edfff1;
+    text-align: center;
+    padding: 20px;
+}
+
+
+/* my innovation  */
+.nav-icon
+{
+    /* background-color: red; */
+    position: relative;
+}
+
+.nav-icon p
+{
+    color: rgb(255, 0, 0);
+    position: absolute;
+    top: -1px;
+    right: 81px;
+    font-size: 10px;
+    font-weight: 500;
+    transition: all .42 ease;
+}
+
+
+.nav-icon:hover p
+{
+    
+    color: rgb(0, 255, 21);
+    transform: scale(1.2);
+}
